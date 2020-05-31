@@ -9,19 +9,18 @@
  */
 
 package openapi
+
 // TaskState the model 'TaskState'
 type TaskState string
 
 // List of TaskState
 const (
-	SUCCCESS TaskState = "succcess"
-	RUNNING TaskState = "running"
-	FAILED TaskState = "failed"
-	UPSTREAM_FAILED TaskState = "upstream_failed"
-	SKIPPED TaskState = "skipped"
-	UP_FOR_RETRY TaskState = "up_for_retry"
+	SUCCCESS          TaskState = "succcess"
+	UPSTREAM_FAILED   TaskState = "upstream_failed"
+	SKIPPED           TaskState = "skipped"
+	UP_FOR_RETRY      TaskState = "up_for_retry"
 	UP_FOR_RESCHEDULE TaskState = "up_for_reschedule"
-	QUEUED TaskState = "queued"
-	NONE TaskState = "none"
-	SCHEDULED TaskState = "scheduled"
+	QUEUED            TaskState = "queued"
+	NONE              TaskState = "none"
+	SCHEDULED         TaskState = "scheduled"
 )
